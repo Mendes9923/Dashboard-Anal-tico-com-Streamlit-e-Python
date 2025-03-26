@@ -1,0 +1,46 @@
+criar um ambiente do Anaconda 
+>> Environments>>> Create >>Abiente_Stramlit
+Apois intslar as blibiotecas>>
+pip install Stramlit
+pip install altair
+pip install pandas
+pip install numpy
+pip install datetime
+pip install openpyxl
+pip install streamlit_option_menu  
+
+
+Se o streamlit.exe não execultar no terminal no comando streamlit run App.py
+
+Usar esse comando  python -m streamlit run App.py
+
+
+para sair da execulsão ctrl + C
+
+Graficos
+
+df= busca as informação no ecxel
+io = caminho do excel  exemplo './Datasets/faturamento.xlsx'
+sheet_name = é o nome da aba do excel
+usecols = é refernte a coluna ( metrix exemplo A e B)
+nrows = numeros de linhas 
+
+st.subheader Titulo exemplo ('GRÁFICO PIZZA - MAIS RICOS DO MUNDO')
+
+
+iconis para usar acessar o site incons.getbootstrap.com
+https://pt.piliapp.com/emoji/list/
+
+
+# para configuração da paginas igual do html
+st.set_page_config(
+    page_title="Os homes mais rico do mundo",
+    page_icon="❄️",
+    layout="centered", #ou wide
+    initial_sidebar_state="collapsed", #ou expanded ou auto
+    menu_items={
+        'Get Help': 'http://www.meuesite.com.br',
+        'Report a bug':'http://www.meuoutrosite.com.br',
+        'About':"Esse foi app foi desenvolvido por mim"
+    }
+)
